@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBuy</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        header {
+            background-color: #0055a5;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav button {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #feb47b;
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .product-details {
+            max-width: 500px;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+            color: #0055a5; /* Adjusting heading color for better contrast */
+        }
+
+        .product-details p {
+            color: #444; /* Adjusting paragraph color for better contrast */
+        }
+
+        .product-details ul {
+            color: #444; /* Adjusting list items color for better contrast */
+        }
+
+        footer {
+            background-color: #0055a5;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .form-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container h2 {
+            color: #0055a5;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: #444; /* Adjusting input text color for better contrast */
+        }
+
+        .form-container button {
+            background-color: #0055a5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BestBuy</h1>
+        <nav>
+            <button>Home</button>
+            <button>Electronics</button>
+            <button>Contact</button>
+        </nav>
+    </header>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="product-details">
+            <h2>Electronic Product</h2>
+            <p>This is a description of an electronic product. It is a high-quality product with many features and functions that make it a great choice for customers.</p>
+            <ul>
+                <li>Feature 1: High performance</li>
+                <li>Feature 2: Energy efficient</li>
+                <li>Feature 3: Modern design</li>
+                <li>Feature 4: Affordable price</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <!-- Label for the name input -->
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+            <!-- Label for the email input -->
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+
+            <!-- Label for the message textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 BestBuy. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Form submitted! Thank you for contacting us.');
+        });
+    </script>
+</body>
+
+</html>
